@@ -1,0 +1,12 @@
+<div>
+  <b>{{ captchaText }}</b>
+</div>
+
+<form [formGroup]="captchaForm">
+  <div>
+    <input type="text" formControlName="captchaEntered" maxlength="5" />
+  </div>
+</form>
+
+<button type="button" (click)="validateCaptcha()" class="btn btn-success">Validate</button>
+<button type="button" (click)="generateCaptcha()" class="btn btn-warning">Reload</button>

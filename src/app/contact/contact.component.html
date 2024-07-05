@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div> -->
+    <!-- Spinner End -->
+
+
+  <app-header></app-header>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Contact Us</h5>
+                <h1 class="mb-0">If You Have Any Query, Feel Free To Contact Us</h1>
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+216 29 801 440</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.4s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Email to get free quote</h5>
+                            <h4 class="text-primary mb-0">benromdhane.zeineb@esprit.tn</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.8s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Visit our office</h5>
+                            <h4 class="text-primary mb-0">Tunis, Tunisia</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    <form [formGroup]="form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;"formControlName="username">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;" formControlName="email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;" formControlName="subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message" formControlName="content"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button  (click)="sendmail()"  class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                    <iframe class="position-relative rounded w-100 h-100"
+                      
+                       
+                        src="https://www.google.com/maps/embed?pb/36.8064948,10.1815316/R6MR%2BVG4+Assurances+Maghrebia,+Lac+Albert,+Tunis/@36.8205741,10.1702291,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12fd3541b89c1969:0x216ca5a5e8cda349!2m2!1d10.2413258!2d36.834641?entry=ttu"
+                        
+                        
+                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="../../assets/img/vendor-1.jpg"  alt="">
+                    <img src="../../assets/img/vendor-2.jpg" alt="">
+                    <img src="../../assets/img/vendor-3.jpg" alt="">
+                    <img src="../../assets/img/vendor-4.jpg" alt="">
+                    <img src="../../assets/img/vendor-5.jpg" alt="">
+                    <img src="../../assets/img/vendor-6.jpg" alt="">
+                    <img src="../../assets/img/vendor-7.jpg" alt="">
+                    <img src="../../assets/img/vendor-8.jpg" alt="">
+                    <img src="../../assets/img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    <!-- <p>ddddddddddddd</p>
+    <input
+   formControlName="recaptchaReactive" siteKey="6LdfNwgqAAAAAINBZlGRJQ6SJlpVl6RTtFzQ4tmz">
+    <re-captcha
+    name="recaptchaReactive" ngModel siteKey="6LdfNwgqAAAAAINBZlGRJQ6SJlpVl6RTtFzQ4tmz">
+ </re-captcha> -->
+    <!-- Footer Start -->
+   <app-footer></app-footer>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
